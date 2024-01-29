@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Web Developer Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="survey">
+            <div class="header">
+                <h1 id="title" class="text-align">Web Developer Survey Form</h1>
+                <p id="description" class="text-align">Thank you for taking the time to help us gether information</p>
+            </div>
+            <div class="card">
+                <form id="survey-form">
+                    <div>
+                        <label class="d-block label-style" for="name" id="name-label">Name</label>
+                        <input class="input-style text-input-p" id="name" type="text" placeholder="enter your name"
+                            required />
+                    </div>
+
+                    <div class="margin-top">
+                        <label class="d-block label-style" for="email" id="email-label">Email</label>
+                        <input class="input-style text-input-p" id="email" type="email"
+                            placeholder="please enter your email" required />
+                    </div>
+
+                    <div class="margin-top">
+                        <label class="d-block label-style" for="number" id="number-label">Age</label>
+                        <input class="input-style number-input-p" id="number" type="number" min="5" max="10"
+                            placeholder="please enter your age" />
+                    </div>
+
+                    <div class="margin-top">
+                        <label class="d-block label-style" for="dropdown">Which option best describes your current
+                            role?</label>
+                        <select class="input-style number-input-p" id="dropdown">
+                            <option disabled selected value="">Select current role</option>
+                            <option value="test2">test2</option>
+                        </select>
+                    </div>
+                    <div class="margin-top">
+                        <label for="recommendation" class="d-block label-style">Would you recommend being a Web
+                            Developer to a friend ?</label>
+                        <div class="radio-style">
+                            <input type="radio" id="definately" value="1" name="recommendation" />
+                            <label class="label-style" for="definately">Definitely</label>
+                        </div>
+                        <div class="radio-style">
+                            <input type="radio" id="maybe" value="2" name="recommendation" />
+                            <label class="label-style" for="maybe">Maybe</label>
+                        </div>
+                        <div class="radio-style">
+                            <input type="radio" id="not-sure" value="3" name="recommendation" />
+                            <label class="label-style" for="female">Not sure</label>
+                        </div>
+                    </div>
+
+                    <fieldset class="margin-top">
+                        <legend>Plese make a selection</legend>
+                        <div>
+                            <input type="checkbox" name="test1" value="option1" />
+                            <label for="test1">option1</label>
+                        </div>
+                        <input type="checkbox" name="test2" value="option2" />
+                        <label for="test2">option2</label>
+                    </fieldset>
+
+                    <div class="margin-top">
+                        <textarea></textarea>
+                    </div>
+                    <button class="margin-top" type="submit" id="submit">submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
