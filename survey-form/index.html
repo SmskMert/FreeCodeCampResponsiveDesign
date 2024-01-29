@@ -48,7 +48,7 @@
                         </select>
                     </div>
                     <div class="margin-top">
-                        <label for="recommendation" class="d-block label-style">Would you recommend being a Web
+                        <label for="recommendation" class="d-block label-style">Would you recommend to be a Web
                             Developer to a friend ?</label>
                         <div class="radio-style">
                             <input type="radio" id="definately" value="1" name="recommendation" />
@@ -65,19 +65,29 @@
                     </div>
 
                     <fieldset class="margin-top">
-                        <legend>Plese make a selection</legend>
-                        <div>
-                            <input type="checkbox" name="test1" value="option1" />
-                            <label for="test1">option1</label>
+                        <legend class="label-style">What other developer roles do you suggest ? <span
+                                id="recommendation-info"> (Check all that apply)</span> </legend>
+                        <div class="label-style">
+                            <div class="radio-style">
+                                <input type="checkbox" name="backendDev" value="backend-dev" />
+                                <label class="label-style" for="backendDev">Backend Developer</label>
+                            </div>
+                            <div class="radio-style">
+                                <input type="checkbox" name="devOpsDev" value="devOpsDev" />
+                                <label class="label-style" for="devOpsDev">DevOps Developer</label>
+                            </div>
+                            <div class="radio-style">
+                                <input type="checkbox" name="TestEng" value="TestEng" />
+                                <label class="label-style" for="TestEng">Test Engineer</label>
+                            </div>
                         </div>
-                        <input type="checkbox" name="test2" value="option2" />
-                        <label for="test2">option2</label>
                     </fieldset>
 
                     <div class="margin-top">
-                        <textarea></textarea>
+                        <label class="label-style">Any comments or suggestions?</label>
+                        <textarea class="textarea-style" placeholder="Enter your comment here..."></textarea>
                     </div>
-                    <button class="margin-top" type="submit" id="submit">submit</button>
+                    <button class="margin-top btn-style" type="submit" id="submit">Submit</button>
                 </form>
             </div>
         </div>

@@ -1,13 +1,26 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 :root {
     --header: #fff;
     --survey: #f6f6f6;
     --survey-bg: rgba(0, 0, 0, 0.8);
+    --color-green: rgb(0, 172, 0);
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
 }
 
 .text-align {
@@ -16,11 +29,6 @@
 
 .d-block {
     display: block;
-}
-
-body {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 16px;
 }
 
 .text-input-p {
@@ -42,6 +50,11 @@ body {
 .input-style:focus {
     outline:1px solid grey;
     box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(112, 112, 112, 0.6);
+}
+
+input[type="checkbox"] {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 input[type="radio"] {
@@ -68,16 +81,23 @@ input[type="radio"] {
     font-style: italic;
 }
 
+fieldset {
+    border: none;
+}
+
 .header {
+    width:700px;
     margin-top: 4em;
     color: var(--header);
 }
 
+
 .container {
+    width: inherit;
     height: 100%;
     display: flex;
-    justify-content: top;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
     background-image: url("https://shots.codepen.io/leen624/pen/mdLjbbz-512.jpg?version=1664907060");
     background-size: cover;
@@ -90,7 +110,7 @@ input[type="radio"] {
 }
 
 .survey {
-    width: 50%;
+    margin-bottom: 4rem;
     color: var(--survey);
 }
 
@@ -98,19 +118,19 @@ input[type="radio"] {
     margin-top: 0.8rem;
 }
 
-textarea {
-    width: 100%;
-    max-width: 100%
-}
+
 
 .card {
+    width:700px;
     margin: 1em 0;
     padding: 2em;
     border-radius: 1em;
     background-color: var(--survey-bg);
 }
 
-
+#recommendation-info {
+    font-size: 1.3rem;
+}
 
 #name {
     height: 30px;
@@ -119,3 +139,33 @@ textarea {
 #email {
     height: 30px;
 }
+
+.textarea-style {
+    border-radius: 0.5rem;
+    width: calc(100% - 2rem);
+    margin: 0.5rem 1rem;
+    padding: 1rem;
+    font-size:1.3rem ;
+    height: 10rem;
+    font-family: inherit;
+}
+
+.btn-style {
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    background-color: var(--color-green);
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor:pointer;
+    border-radius: 0.5rem;
+    border: none;
+
+}
+
+@media (max-width:800px) {
+    .survey, .card, .header {
+        width:480px;
+    }
+}
+
