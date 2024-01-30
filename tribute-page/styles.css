@@ -4,7 +4,9 @@
     --container: rgb(230, 230, 230);
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -19,20 +21,19 @@ h1 {
     margin-top: 3rem;
 }
 
- #second-title {
+#second-title {
     margin-top: 1rem;
     font-size: 1rem;
     font-weight: 300;
- }
+}
 
- #img-caption {
+#img-caption {
     text-align: center;
-    margin:0 1rem;
- }
+    margin: 0 1rem;
+}
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
-    min-width: 500px;
 }
 
 #container {
@@ -41,24 +42,65 @@ body{
     align-items: center;
 }
 
+#timeline-title {
+    margin: 3rem;
+    text-align: center;
+}
+
+#timeline-container {
+    margin: 0 1rem;
+    max-width: 1000px;
+}
+
 #img-container {
     background-color: #fff;
     max-width: 1000px;
-    margin: 1rem 1rem;
-    padding: 1rem;
-    border-radius: 5px;
+    margin: 1.5rem 1rem;
+    padding: 3rem 1rem;
+    border-radius: 10px;
 }
 
-#image{
-    display:block;
-    margin:auto;
-    max-width:90%;
+ul li {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+figcaption p {
+    margin-top: 1rem;
+}
+
+#quoto-container {
+    font-style: italic;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+#author-name {
+    margin-top: 1rem;
+}
+
+#image {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    max-width: 90%;
     min-width: 200px;
-    padding-bottom: 1rem;
-  }
+}
+
+.date {
+    font-weight: 600;
+}
 
 #container {
     border-radius: 0.5rem;
     margin: 2rem 1rem;
     background-color: var(--container);
+}
+
+.further-read {
+font-size: 1.5rem;
+font-weight: 500;
+margin: 0 2rem 3rem 2rem;
+text-align: center;
 }
