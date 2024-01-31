@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Angular Documentation</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <header>Angular Documentation</header>
+            <ul>
+                <li><a class="nav-link" href="#introduction">Introduction</a></li>
+                <li><a class="nav-link" href="#getting_started">Getting Started</a></li>
+                <li><a class="nav-link" href="#components">Components</a></li>
+                <li><a class="nav-link" href="#interfaces">Interfaces</a></li>
+                <li><a class="nav-link" href="#dependency_injection">Dependency Injection (DI)</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section id="introduction" class="main-section">
+                <header>
+                    <h1>
+                        Introduction to the Angular docs
+                    </h1>
+                </header>
+                <p>Angular is an application-design framework and development platform for creating efficient and
+                    sophisticated single-page apps.</p>
+                <p>this is the first angular code example below.</p>
+                <ul>
+                    <div class="top-ul">
+                        <h3>Assumptions</h3>
+                        <li>
+                            <p>These docs assume that you are already familiar with HTML, CSS, JavaScript, and some of
+                                the
+                                tools from the latest standards, such as classes and modules. The code samples are
+                                written
+                                using TypeScript. Most Angular code can be written with just the latest JavaScript,
+                                using
+                                types for dependency injection, and using decorators for metadata.</p>
+                        </li>
+
+                    </div>
+                    <div class="mid-ul">
+                        <h3>Key Features</h3>
+                        <li><strong>Declarative UI:</strong> Angular facilitates the creation of user interfaces through
+                            a
+                            declarative syntax, making it easier to express the desired structure and behavior.</li>
+                        <li><strong>Component-based architecture:</strong> Angular follows a component-based
+                            architecture,
+                            where applications are constructed as a tree of components. Each component encapsulates a
+                            specific part of the user interface and associated logic.</li>
+                    </div>
+
+                    <h3>Feedback</h3>
+
+                    <li>We want to hear from you. Report problems or submit suggestions for future docs.
+
+                        Contribute to Angular docs by creating pull requests on the Angular GitHub repository. See
+                        Contributing to Angular for information about submission guidelines.
+
+                        Our community values respectful, supportive communication. Please consult and adhere to the Code
+                        of Conduct.</li>
+
+
+                </ul>
+            </section>
+            <hr>
+            <section id="getting_started" class="main-section">
+                <header>
+                    <h1>Getting Started</h1>
+                </header>
+                <p>To begin working with Angular, you can follow these simple steps:</p>
+                <ol>
+                    <li>Install Node.js and npm (Node Package Manager) on your machine.</li>
+                    <li>Install Angular CLI (Command Line Interface) globally using the following command:</li>
+                    <pre>
+                        <code>npm install -g @angular/cli
+                        </code>
+                    </pre>
+                    <li>Create a new Angular project:</li>
+                    <pre>
+                        <code>npm install -g @angular/cli
+                        </code>
+                    </pre>
+                    <li>Install Angular CLI (Command Line Interface) globally using the following command:</li>
+                    <pre>
+                        <code>ng new my-angular-app
+                        </code>
+                    </pre>
+                    <li>Start the development server:</li>
+                    <pre>
+                        <code>ng serve
+                        </code>
+                    </pre>
+                </ol>
+                <p>This will launch your Angular application, and you can access it at http://localhost:4200 by default.
+                </p>
+            </section>
+            <hr>
+            <section id="components" class="main-section">
+                <header>
+                    <h1>Components</h1>
+                </header>
+                <p>Angular applications are built using components, which are the basic building blocks of the user
+                    interface. A component in Angular encapsulates a part of the UI and its associated logic. Each
+                    component is designed to be reusable, maintainable, and modular. Components follow a hierarchical
+                    structure, creating a tree of components that collectively form the application.</p>
+                <p class="margin-top">Components in Angular are defined using the @Component decorator, providing
+                    metadata such as the selector (HTML tag for the component), template (UI structure), and styles (CSS
+                    styles). Here's an example of a simple Angular component:</p>
+                <pre>
+                    <code>import { Component } from '@angular/core';
+    @Component({
+        selector: 'app-example',
+        template: `
+        &lt;h2&gt;Hello, Angular!&lt;/h2&gt;
+        &lt;p&gt;This is a simple Angular component.&lt;/p&gt;
+          `
+         })
+    export class ExampleComponent {}</code>
+                </pre>
+                <p>In this example, the ExampleComponent class represents a component with an &lt;h2&gt title and a
+                    &lt;p&gt; paragraph.</p>
+            </section>
+            <hr>
+            <section id="interfaces" class="main-section">
+                <header>
+                    <h1>Interfaces</h1>
+                </header>
+
+                <p>Interfaces in Angular play a crucial role in defining contracts for classes and ensuring a consistent
+                    structure throughout the application. Interfaces define the shape of objects and provide a way to
+                    enforce certain properties and methods in classes that implement them.</p>
+                <p class="mid-ul">In Angular, interfaces are commonly used in conjunction with services, components, and
+                    other parts of the application to enforce a specific structure and type-checking. By using
+                    interfaces, developers can enhance code readability, maintainability, and catch potential errors
+                    during development.</p>
+                <p>Here's an example of an interface in TypeScript:</p>
+                <pre><code>
+    interface UserData {
+        id: number;
+        username: string;
+        email: string;
+      }
+      
+      class User implements UserData {
+        constructor(public id: number, public username: string, public email: string) {}
+      }
+      
+</code></pre>
+                <p>In this example, the UserData interface defines the expected structure for user data, and the User
+                    class implements this interface.</p>
+            </section>
+            <hr>
+            <section id="dependency_injection" class="main-section">
+                <header>
+                    <h1>Dependency Injection (DI)</h1>
+                </header>
+                <p>Dependency Injection (DI) is a fundamental concept in Angular that promotes the idea of providing
+                    dependencies to a class or component from an external source. DI is used to manage the creation and
+                    sharing of instances across an application.</p>
+                <p class="mid-ul">In Angular, the dependency injection system is built into the framework and is responsible for
+                    creating and managing instances of services, components, and other objects. It helps improve code
+                    modularity, testability, and maintainability by allowing components to focus on their specific
+                    responsibilities while relying on external services.</p>
+                <p>Here's a brief example of dependency injection in an Angular component:</p>
+                <pre>
+                    <code>
+    import { Component, Inject } from '@angular/core';
+    import { DataService } from './data.service';
+
+    @Component({
+        selector: 'app-example',
+        template: `
+        &lt;p&gt;{{ message }}&lt;/p&gt;
+                `
+        })
+    export class ExampleComponent {
+    constructor(@Inject(DataService) private dataService: DataService) {
+    this.message = this.dataService.getData();
+  }
+}
+
+                    </code>
+                </pre>
+                <p>In this example, the ExampleComponent class receives an instance of the DataService through
+                    dependency injection.</p>
+
+            </section>
+        </main>
+    </div>
+
+</body>
+
+</html>
