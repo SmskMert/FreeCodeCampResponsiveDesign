@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+@media (max-width:720px) {
+    #navbar-items{
+        display:flex;
+        flex-direction: column;
+      }
+
+    ul#navbar-items li {
+        margin: 0 !important;
+    }
+    
+}
+
+@media (max-width:1270px) {
+    .tea-infos {
+        flex-wrap: wrap;
+        }
+  }
+
+  .section-title {
+    font-weight: 500;
+  }
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .aboutus-block {
+    margin: 1rem;
+  }
+
+  .aboutus-block h3 {
+    padding-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .card {
+    border: 1px #000 solid;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 390px;
+  }
+
+  .card h3 {
+    border-radius: 1rem  1rem 0 0;
+    font-weight: 500;
+    background-color: rgb(226, 226, 226);
+    padding: 0.5rem ;
+  }
+
+  .card p {
+    color: #12372A;
+    padding: 0.5rem;
+    text-align:justify;
+  }
+
+form {
+    text-align: center;
+}
+
+.select {
+    font-family: inherit;
+    width: 120px;
+    font-weight: 500;
+    padding: 0.4rem;
+    border: none;
+    background-color: #ffb630;
+    border-radius: 0.2rem;
+    margin: 1rem;
+    transition: background-color 0.8s ease;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center !important;
+}
+
+.button-container {
+    text-align: center;
+}
+
+#email {
+    width: 350px ;
+    height: 2rem;
+    font-family: inherit;
+    padding: 0 0.5rem;
+}
+
+#submit {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 1.2rem;
+    width: 200px;
+    height: 2rem;
+    border: none;
+    background-color: #ffb630;
+    transition: background-color 0.8s ease;
+    margin-top: 1rem;
+}
+
+#submit:hover {
+    background-color: #D69723;
+}
+.select:hover {
+    background-color: #D69723;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+  }
+
+  .tea-info {
+    background-color: rgb(226, 226, 226);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    width: 500px;
+    min-width: 400px;
+    display: flex;
+    margin: 1rem;
+  }
+
+  .tea-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .tea-info-container > h3 {
+    color:#D69723;
+  }
+
+  .tea-infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  div.icon i {
+    font-size: 5rem;
+    color:#12372A;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9EFDB;
+  }
+
+
+
+  #header-img {
+    width: 250px;
+  }
+  
+  .container {
+    margin: auto;
+    width: 90%;
+  }
+
+  #navbar-items{
+    display:flex;
+  }
+  
+  #header {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  
+  ul li a {
+    color: #575C0E;
+    text-decoration: none;
+  }
+
+  ul li {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 1rem;
+    list-style:none;
+  }
+  
+  ul li a:hover{
+    color: #D69723;
+  }
+
+  ul li a:focus, ul li a:active {
+    color: #D69723;
+  }
+
+  .video-container {
+    margin:1rem;
+  display:flex;
+  justify-content:center;
+  }
+  
+  div.info p {
+    margin:1rem;
+  }
+  
+  div h2 {
+    margin-left:1rem;
+  }
+  
+  form {
+    margin:1rem;
+  }
+  
+  #nav-bar {
+    position:sticky;
+    top:0;
+  }
+  
+  #header {
+    padding: 0 6rem;
+    background-color:#E1F0DA;
+      position:sticky;
+    top:0;
+  }
+  
+  div.copy-right > p {
+    margin-top: 0;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #E1F0DA;;
+  }
+
+  .footer-container {
+    margin-right: 2rem;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .slogan {
+    margin: 1rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .copy-right {
+    margin-bottom: 1rem;
+  }
+  
+ 
+  
+  
+  
