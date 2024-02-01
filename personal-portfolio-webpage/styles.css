@@ -1,0 +1,11 @@
+#navbar {
+    position:sticky;
+    top:0;
+  }
+  
+  @media (max-width:300px) {
+    #navbar {
+      display:flex;
+      flex-direction:column;
+    }
+  }
