@@ -2,6 +2,15 @@
 
 The repository Showcases my skills in HTML and CSS through a series of projects emphasizing responsive web design.
 
+## Product Landing Page
+
+- ArcticBrew Tea Co. Landing Page is a static webpage designed to showcase the company's iced tea products. The project focuses on implementing responsive design principles, ensuring a seamless viewing experience across various devices and screen sizes via HTML5 and CSS3.
+    ### Features
+        - Integration of Font Awesome for iconography.
+        - Embedded YouTube video showcasing the product.
+        - Use of Flexbox for efficient page structuring.
+        - Responsive layout for desktop and mobile devices.
+
 ## Survey Form
 
 - It focuses on creating a responsive survey form that adapts to various screen sizes. The form collects user input for a survey and demonstrates proficiency in HTML and CSS. Additionally, HTML form validation is implemented to enhance user input accuracy.
@@ -16,4 +25,8 @@ The repository Showcases my skills in HTML and CSS through a series of projects 
 
 ## Getting Started:
 
-To explore the any project within the repository, simply open the `index.html` file of the desired project in your preferred web browser. Dive into the world of HTML and CSS concepts presented in a structured and accessible format.
+To explore the any project within the repository, clone the repo and simply open the `index.html` file of the desired project in your preferred web browser. Dive into the world of HTML and CSS concepts presented in a structured and accessible format.
+
+ ```bash
+   git clone https://github.com/SmskMert/FreeCodeCampResponsiveDesign.git
+   ```
