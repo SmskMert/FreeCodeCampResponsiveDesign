@@ -2,6 +2,10 @@
 
 The repository Showcases my skills in HTML and CSS through a series of projects emphasizing responsive web design.
 
+## Personal Portfolio Page
+
+- Utilizing modern techniques like CSS Grid, CSS Flex and variables, I crafted a sleek personal portfolio page. The layout adapts seamlessly across devices, thanks to responsive design principles. Enhancing its appeal, I integrated Font Awesome icons for added visual flair. Explore my GitHub and LinkedIn profiles through convenient links provided on the page.
+
 ## Product Landing Page
 
 - ArcticBrew Tea Co. Landing Page is a static webpage designed to showcase the company's iced tea products. The project focuses on implementing responsive design principles, ensuring a seamless viewing experience across various devices and screen sizes via HTML5 and CSS3.
